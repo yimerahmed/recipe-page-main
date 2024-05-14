@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    background-color:  hsl(0, 0%, 100%);
+    height: 2039px;
+    width: 375px;
+}
+.image-container{
+    width: 373px;
+    height: 170px;
+}
+.image{
+    
+    width: 100%;
+}
+.con{
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 375px;
+}
+h1{
+    font-family: "Young Serif", serif;
+    font-size: 35px;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+#easy{
+    width: 313px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    opacity: 0.75;
+}
+.preparation{
+    width: 253px;
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(330, 100%, 98%);
+    margin-top: 34px;
+    padding-right: 60px;
+    border-radius: 15px;
+    opacity: 0.85;
+    /* margin-bottom: 34px; */
+}
+#preparation-time{
+    
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 130px;
+    opacity: 0.75;
+}
+.total{
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 64px;
+    padding-bottom: 18px;
+    padding-top: 20px;
+    opacity: 0.75;
+}
+span{
+    font-weight: 900;
+    opacity: 0.75;
+    /* padding-left: 20px; */
+}
+
+.ingredients{
+    width: 313px;
+}
+.ingredient-list{
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-left: 40px;
+    opacity: 0.75;
+}
+#last{
+    padding-bottom: 20px;
+}
+hr{
+    opacity: 0.5;
+    width: 313px;
+}
+h2{
+    opacity: 0.9;
+    font-family: "Young Serif", serif;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color:  hsl(14, 45%, 36%);
+    /* color: hsl(332, 51%, 32%); */
+}
+h3{
+    color:  hsl(14, 45%, 36%);
+}
+.instruction-container{
+    width: 313px;
+}
+ul li{
+    padding-left: 20px;
+}
+ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  /* Output the numbers using the counter() function, but use a custom color, and position the numbers how we want */
+  ol li:before {
+    color:  hsl(14, 45%, 36%);
+    content: counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    font-weight: 700;
+  }
+
+.instruction_list{
+    opacity: 0.75;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 38px;
+}
+.instruction_list:last-child{
+    padding-bottom: 25px;
+}
+.nutrition-container{
+    width: 313px;
+}
+.nutritional-value{
+    opacity: 0.75;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+/* #nutritional-value{
+    padding-bottom: 0;
+} */
+#table{
+    line-height: 1.5;
+    font-family: "Outfit", sans-serif;
+}
+.calory{
+    margin-right: 85px;
+    padding-left: 32px;
+}
+.carb{
+    margin-right: 102px;
+    padding-left: 32px;
+}
+.protein{
+    margin-right: 92px;
+    padding-left: 32px;
+}
+.fat{
+    margin-right: 119px;
+    padding-left: 32px;
+}
+
+
+@media(min-width:768px){
+    .main{
+        margin: 125px 351px;
+        border-radius: 20px;
+        width: 738px; 
+        height: 1710px;
+    }
+    .con{
+        padding-right: 43px;
+        padding-left: 43px;
+        /* width: 738px; */
+    }
+    .image-container{
+        height: 300px;
+        width: 656px;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 37px;
+    }
+    h1{
+       width: 475px;
+    }
+    #easy{
+        width: 634px;
+    }
+    .preparation{
+        width: 590px;
+    }
+    .ingredients{
+        width: 590px;
+    }
+    hr{
+        width: 655px;
+    }
+    .instruction-container{
+        width: 600px;
+    }
+    .nutrition-container{
+        width: 590px;
+    }
+    .calory{
+        margin-right: 248px;
+    }
+    .carb{
+        margin-right: 262px;
+    }
+    .protein{
+        margin-right: 254px;
+    }
+    .fat{
+        margin-right: 281px;
+    }
+}
